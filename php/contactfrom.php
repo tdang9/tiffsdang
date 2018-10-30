@@ -252,13 +252,13 @@ if(get_magic_quotes_gpc()) {
 
 // Enter the email address that you want to emails to be sent to.
 
-// Example $address = "joe.doe@yourdomain.com";
+// Example $address = "tdang9@icloud.com";
 
 
 
-//$address = "example@example.net";
+//$address = "tdang9@icloud.com";
 
-$address = "example@example.net";
+$address = "tdang9@icloud.com";
 
 
 
@@ -326,7 +326,7 @@ if(mail($address, $e_subject, $msg, $headers)) {
 
     echo "<h3 class='succes_message'>Email Sent Successfully.</h3>";
 
-    echo "<p>Thank you <strong>$name</strong>, your message has been submitted to us.</p>";
+    echo "<p>Thank you <strong>$name</strong>, your message has been submitted.</p>";
 
     echo "</div>";
 
@@ -444,13 +444,13 @@ if(get_magic_quotes_gpc()) {
 
 // Enter the email address that you want to emails to be sent to.
 
-// Example $address = "joe.doe@yourdomain.com";
+// Example $address = "tdang9@icloud.com";
 
 
 
-//$address = "example@example.net";
+//$address = "tdang9@icloud.com";
 
-$address = "example@example.net";
+$address = "tdang9@icloud.com";
 
 
 
@@ -518,7 +518,7 @@ if(mail($address, $e_subject, $msg, $headers)) {
 
     echo "<h3 class='succes_message'>Email Sent Successfully.</h3>";
 
-    echo "<p>Thank you <strong>$name</strong>, your message has been submitted to us.</p>";
+    echo "<p>Thank you <strong>$name</strong>, your message has been submitted.</p>";
 
     echo "</div>";
 
