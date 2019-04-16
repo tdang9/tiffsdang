@@ -68,34 +68,58 @@
             <!-- header -->
             <!-- main-wrapper-inner -->
         	<!DOCTYPE html>
-<html>
-<title>W3.CSS</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+  </style>
+</head>
 <body>
 
-<div class="w3-container">
-  <h2>Space as Scientific Anomaly</h2>
-  <p>Media: Mixed Media and Digital</p>
-</div>
+<div id="demo" class="carousel slide" data-ride="carousel">
 
-<div class="w3-content" style="max-width:1200px">
-  <img class="img-responsive" src="images/gallery/6a.jpg" style="width:100%;display:none">
-  <img class="img-responsive" src="images/gallery/6b.jpg" style="width:100%">
-  <img class="img-responsive" src="images/gallery/6c.jpg"" style="width:100%;display:none">
-
-  <div class="w3-row-padding w3-section">
-    <div class="w3-col s4">
-      <img class="img-responsive" src="images/gallery/6a.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/gallery/6a.jpg" alt="" width="1100" height="500">
     </div>
-    <div class="w3-col s4">
-     <img class="img-responsive" src="images/gallery/6b.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+    <div class="carousel-item">
+      <img src="images/gallery/6b.jpg" alt="" width="1100" height="500">
     </div>
-    <div class="w3-col s4">
-     <img class="img-responsive" src="images/gallery/6c.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+    <div class="carousel-item">
+      <img src="images/gallery/6a.jpg" alt="" width="1100" height="500">
     </div>
   </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
 </div>
+
+</body>
+</html>
 
 <script>
 function currentDiv(n) {
