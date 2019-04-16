@@ -142,11 +142,11 @@ function plusSlides(n) {
 
 // Thumbnail image controls
 function currentSlide(n) {
-  console.log(slideIndex);
   showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
+console.log(n);
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
@@ -162,7 +162,6 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
-	  </script>
 			
             <!-- header -->
             <header id="header" class="header">
