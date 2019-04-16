@@ -236,7 +236,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }
-showSlides(slideIndex);
 </script>
 	</div>
 	  <footer class="footer">
@@ -275,5 +274,8 @@ showSlides(slideIndex);
             </div>
         </footer>
         <!-- footer -->
+	  <script>
+	  showSlides(slideIndex);
+</script>
 	</body>
 </html>
